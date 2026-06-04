@@ -7,8 +7,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-TB_PATH  = r"F:\finance-ai-course\data\trial_balance.csv"
-GL_PATH  = r"F:\finance-ai-course\data\gl_transactions.csv"
+import pathlib
+_ROOT = pathlib.Path(__file__).parent.parent if "__file__" in dir() else pathlib.Path(".")
+TB_PATH = str(_ROOT / "data" / "trial_balance.csv")
+GL_PATH = str(_ROOT / "data" / "gl_transactions.csv")
 OLLAMA_URL = "http://localhost:11434/api/generate"
 MAX_AI_ROWS = 200
 CHUNK_SIZE  = 300
