@@ -1,0 +1,27 @@
+txn_id,date,account_code,account_name,description,debit,credit,posted_by,entity
+TXN001,2025-12-01,4001,Revenue - Sales,Invoice INV-2025-1201 Customer A,0,85000,sys,EntityA
+TXN002,2025-12-01,1100,Accounts Receivable,Invoice INV-2025-1201 Customer A,85000,0,sys,EntityA
+TXN003,2025-12-03,5001,Cost of Goods Sold,COGS for INV-2025-1201,42000,0,jsmith,EntityA
+TXN004,2025-12-03,1200,Inventory,COGS for INV-2025-1201,0,42000,jsmith,EntityA
+TXN005,2025-12-05,6001,Salaries,December payroll run,68000,0,payroll,EntityA
+TXN006,2025-12-05,2001,Accounts Payable,December payroll run,0,68000,payroll,EntityA
+TXN007,2025-12-10,6002,Rent,December office rent,24000,0,jsmith,EntityA
+TXN008,2025-12-10,2001,Accounts Payable,December office rent,0,24000,jsmith,EntityA
+TXN009,2025-12-15,4001,Revenue - Sales,Invoice INV-2025-1215 Customer B,0,100000,sys,EntityA
+TXN010,2025-12-15,1100,Accounts Receivable,Invoice INV-2025-1215 Customer B,100000,0,sys,EntityA
+TXN011,2025-12-15,4001,Revenue - Sales,Invoice INV-2025-1215 Customer B,0,100000,sys,EntityA
+TXN012,2025-12-15,1100,Accounts Receivable,DUPLICATE INV-2025-1215 Customer B,100000,0,sys,EntityA
+TXN013,2025-12-18,6003,Utilities,December utilities,8400,0,jsmith,EntityA
+TXN014,2025-12-18,2001,Accounts Payable,December utilities,0,8400,jsmith,EntityA
+TXN015,2025-12-20,5001,Cost of Goods Sold,Inventory adjustment,50000,0,admin,EntityA
+TXN016,2025-12-20,1200,Inventory,Inventory adjustment,0,50000,admin,EntityA
+TXN017,2025-12-22,4002,Revenue - Services,Service fee December,0,52000,sys,EntityA
+TXN018,2025-12-22,1100,Accounts Receivable,Service fee December,52000,0,sys,EntityA
+TXN019,2025-12-28,6004,Marketing,Q4 marketing campaign,15000,0,jsmith,EntityA
+TXN020,2025-12-28,2001,Accounts Payable,Q4 marketing campaign,0,15000,jsmith,EntityA
+TXN021,2025-12-30,7001,Interest Expense,Bank interest December,3200,0,sys,EntityA
+TXN022,2025-12-30,2100,Accrued Expenses,Bank interest December,0,3200,sys,EntityA
+TXN023,2025-12-31,1001,Cash and Bank,December receipts,45200,0,sys,EntityA
+TXN024,2025-12-31,1100,Accounts Receivable,December receipts,0,45200,sys,EntityA
+TXN025,2025-12-31,999,SUSPENSE,Unallocated entry end of month,10000,0,admin,EntityA
+TXN026,2025-12-31,999,SUSPENSE,Unallocated entry end of month,0,10000,admin,EntityA
