@@ -3,8 +3,9 @@ pandas
 python-dotenv
 streamlit
 requests
-chromadb
+chromadb==0.4.24
 sentence-transformers
 langchain
 langchain-anthropic
+protobuf==3.20.3
 groq
