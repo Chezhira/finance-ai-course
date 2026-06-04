@@ -1,6 +1,6 @@
 # Finance AI Builder — FDE Pivot Track
 
-> **20 years of finance depth. 4 years of AI build track record. Production-grade systems, not demos.**
+> **20 years of finance depth. 4 years of AI build track record. Production-ready systems.**
 
 [![Streamlit](https://img.shields.io/badge/Streamlit-Live-FF4B4B?style=flat&logo=streamlit&logoColor=white)](https://finance-ai-command-centre.streamlit.app) [![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=flat&logo=python&logoColor=white)](https://python.org) [![Anthropic](https://img.shields.io/badge/Claude-API-191919?style=flat)](https://anthropic.com)
 
