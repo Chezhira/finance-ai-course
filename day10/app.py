@@ -101,7 +101,99 @@ DOCS = [
     {"id":"policy_2","text":"Revenue Recognition product sales recognised at point of delivery when control transfers to customer. Service revenue recognised over performance period. Long-term contracts exceeding 12 months use percentage of completion method."},
 ]
 
-st.set_page_config(page_title="Finance AI Command Centre", page_icon="F", layout="wide")
+st.set_page_config(page_title="Finance AI Command Centre", page_icon="📊", layout="wide")
+
+st.markdown("""
+<style>
+/* Main background */
+.stApp { background-color: #0f1117; color: #e8eaf0; }
+
+/* Sidebar */
+section[data-testid="stSidebar"] { background-color: #1a1d27; border-right: 1px solid #2e3248; }
+section[data-testid="stSidebar"] * { color: #e8eaf0 !important; }
+
+/* Metrics */
+[data-testid="metric-container"] {
+    background: #1a1d27;
+    border: 1px solid #2e3248;
+    border-radius: 10px;
+    padding: 1rem;
+}
+[data-testid="stMetricValue"] { color: #e8eaf0 !important; font-size: 1.6rem !important; }
+[data-testid="stMetricDelta"] { font-size: 0.85rem !important; }
+
+/* Buttons */
+.stButton > button {
+    background: linear-gradient(135deg, #6c8eff, #a78bfa);
+    color: white !important;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    transition: opacity 0.2s;
+}
+.stButton > button:hover { opacity: 0.85; }
+
+/* Dataframe */
+.stDataFrame { border: 1px solid #2e3248; border-radius: 8px; }
+
+/* Success/Error/Warning boxes */
+.stSuccess { background: rgba(52,211,153,0.1) !important; border-left: 3px solid #34d399 !important; border-radius: 8px; }
+.stError   { background: rgba(248,113,113,0.1) !important; border-left: 3px solid #f87171 !important; border-radius: 8px; }
+.stWarning { background: rgba(251,191,36,0.1)  !important; border-left: 3px solid #fbbf24 !important; border-radius: 8px; }
+.stInfo    { background: rgba(108,142,255,0.1) !important; border-left: 3px solid #6c8eff !important; border-radius: 8px; }
+
+/* Headers */
+h1 { color: #e8eaf0 !important; font-weight: 700 !important; }
+h2, h3 { color: #9ba3bf !important; font-weight: 600 !important; }
+
+/* Radio buttons */
+.stRadio > label { color: #9ba3bf !important; }
+
+/* Expander */
+.streamlit-expanderHeader { color: #9ba3bf !important; }
+
+/* Input */
+.stTextInput > div > div > input {
+    background: #1a1d27 !important;
+    border: 1px solid #2e3248 !important;
+    color: #e8eaf0 !important;
+    border-radius: 8px;
+}
+
+/* Selectbox */
+.stSelectbox > div > div {
+    background: #1a1d27 !important;
+    border: 1px solid #2e3248 !important;
+    color: #e8eaf0 !important;
+}
+
+/* Caption */
+.stCaption { color: #5f6880 !important; }
+
+/* Progress bar */
+.stProgress > div > div { background: linear-gradient(90deg, #6c8eff, #a78bfa) !important; }
+
+/* File uploader */
+[data-testid="stFileUploader"] {
+    background: #1a1d27;
+    border: 1px dashed #2e3248;
+    border-radius: 8px;
+}
+</style>
+""", unsafe_allow_html=True)
+
+# Hero banner
+st.markdown("""
+<div style="background:linear-gradient(135deg,#1a1d27,#16192b);border:1px solid #2e3248;
+border-radius:12px;padding:1.5rem 2rem;margin-bottom:1.5rem;">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.1em;color:#6c8eff;
+    text-transform:uppercase;margin-bottom:0.5rem;">Finance AI Command Centre</div>
+    <div style="font-size:22px;font-weight:700;color:#e8eaf0;margin-bottom:0.25rem;">
+    AI-Powered Finance Analysis</div>
+    <div style="font-size:13px;color:#5f6880;">GL audit · P&amp;L analysis · Policy Q&amp;A · Month-end automation</div>
+</div>
+""", unsafe_allow_html=True)
 
 st.sidebar.title("Finance AI")
 st.sidebar.caption("Command Centre")
